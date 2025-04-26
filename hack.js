@@ -1,4 +1,26 @@
-alert("Runing 0__0")
+const link = document.querySelector('a[href*="logout.php?sesskey="]');
+const sesskey = link ? new URL(link.href).searchParams.get('sesskey') : null;
 
-document.querySelector('nav.navbar').style.setProperty('background-color', 'red', 'important');
-document.querySelector('body').style.setProperty('background-color', 'black', 'important');
+if (sesskey) {
+  fetch(`https://moodle.arq.ifsp.edu.br/lib/ajax/service.php?sesskey=${sesskey}&info=core_course_get_enrolled_courses_by_timeline_classification`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify([{
+      index: 0,
+      methodname: 'core_course_get_enrolled_courses_by_timeline_classification',
+      args: {
+        classification: 'all',
+        limit: 0,
+        offset: 0,
+        sort: 'fullname',
+        customfieldname: '',
+        customfieldvalue: ''
+      }
+    }])
+  })
+  .then(r => r.json())
+  .then(console.log)
+  .catch(console.error);
+} else {
+  console.error('Sesskey não encontrado');
+}
