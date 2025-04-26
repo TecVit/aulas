@@ -1,2 +1,2 @@
-alert("Hello World")
-document.write = "0___0";
+alert("Runing 0__0")
+document.querySelector('nav.navbar').style.backgroundColor = 'red';
