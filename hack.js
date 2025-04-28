@@ -1,3 +1,5 @@
+alert("HACKKKKKKKK");
+document.querySelector('body').style.background = "#232323";
 const link = document.querySelector('a[href*="logout.php?sesskey="]');
 const sesskey = link ? new URL(link.href).searchParams.get('sesskey') : null;
 
