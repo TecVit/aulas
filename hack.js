@@ -252,6 +252,7 @@
             btnPopup.classList.remove("hidden");
         }
     }
+    window.changeStatusPopup = changeStatusPopup;
 
     const addContentDisciplines = (disciplinesList) => {
         const list = document.querySelector('.container-script .content .list');
@@ -266,6 +267,7 @@
         `);
         list.innerHTML = itemsHTML.join('');
     }
+    window.addContentDisciplines = addContentDisciplines;
 
     const getDisciplinesOfStudent = () => {
         const link = document.querySelector('a[href*="logout.php?sesskey="]');
@@ -299,6 +301,7 @@
             console.error('Sesskey não encontrado');
         }
     };
+    window.getDisciplinesOfStudent = getDisciplinesOfStudent;
 
     getDisciplinesOfStudent();
 })();
