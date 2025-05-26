@@ -1,0 +1,18 @@
+(1) Decimal para Binário
+(a) 25 => 0001 1001
+(b) 50 => 0011 0010
+(c) 127 => 0111 1111
+(d) 8 => 0000 1000
+
+(2) Binário para Decimal
+(a) 0000 1010 => 10
+(b) 0001 1100 => 28
+(c) 0100 0001 => 65
+(d) 0000 0011 => 3
+
+(3) Um sensor registrou a temperatura ambiente como "11011" 
+em binário. Qual é essa temperatura em graus Celsius (decimal)?
+Resposta: 27° Celsius.
+
+(4) Se um computador armazena o número de itens em estoque como "101100" em binário, quantos itens há no estoque em termos decimais?
+Resposta: 44 itens no estoque.
