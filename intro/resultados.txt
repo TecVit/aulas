@@ -1,3 +1,9 @@
+IFSP - CAMPUS ARARAQUARA
+
+Turma: 1º INFO Turma 1
+Alunos: Vitor Custodio da Silva e Vinicius Daniel Boni
+Data: 27/05/2025
+
 (1) Decimal para Binário
 (a) 25 => 0001 1001
 (b) 50 => 0011 0010
@@ -14,5 +20,11 @@
 em binário. Qual é essa temperatura em graus Celsius (decimal)?
 Resposta: 27° Celsius.
 
+=> (1 x 2⁴) + (1 x 2³) + (0 x 2²) + (1 x 2¹) + (1 x 2⁰)
+=> 16 + 8 + 0 + 2 + 1 = 27 Decimal
+
 (4) Se um computador armazena o número de itens em estoque como "101100" em binário, quantos itens há no estoque em termos decimais?
 Resposta: 44 itens no estoque.
+
+=> (1 x 2⁵) + (0 x 2⁴) + (1 x 2³) + (1 x 2²) + (0 x 2¹) + (0 x 2⁰)
+=> 32 + 0 + 8 + 4 + 0 + 0 = 44 Decimal
