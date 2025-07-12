@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #eaf4ef;
+    text-align: center;
+}
+
+hr {
+    height: 10px;
+    background-color: #a3cebd;
+    border: 0px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #3c6651;
+    margin: 25px 0px 20px 0px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3c6651;
+    margin-bottom: 30px;
+}
+
+p,
+p a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c5242;
+    margin: 10px 0px 25px 0px;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+    display: block;
+    border-radius: 12px;
+    width: auto;
+    height: 200px;
+    margin: 30px auto;
+}
+
+.btns {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0px auto 30px auto;
+    gap: 25px;
+}
+
+.btns li {
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 12px;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.btns li a {
+    color: #2c5242;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.success {
+    border: 1px dashed #629982;
+    padding: 15px;
+    background: #cbf3d1;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    border: 1px solid #8bc4ac;
+    border-collapse: collapse;
+    color: #053405;
+}
+
+table thead tr th {
+    background: #8bc4ac7a;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+table tbody {
+    background: #fefefe;
+}
+
+table tbody tr td {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    border: 1px solid #8bc4ac;
+}
+
+table tbody tr .green {
+    background: #b8fbb7;
+    color: #094c09;
+}
+
+table tbody tr .red {
+    background: #fbb7b7;
+    color: #4c0909;
+}
