@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Desafio: Duelo Interplanetário entre Robôs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f0f0f8;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            overflow-x: auto;
+        }
+        .resultado {
+            background-color: #dff0d8;
+            border-left: 5px solid #3c763d;
+        }
+    </style>
+</head>
+<body>
+    <h1>⚔️ Desafio: Duelo Interplanetário entre Robôs</h1>
+
+    <p>Dois planetas rivais – <strong>Alfa</strong> e <strong>Ômega</strong> – enviaram suas equipes de robôs para um <strong>duelo técnico amistoso</strong>. Cada equipe é composta por <strong>4 robôs</strong>.</p>
+
+    <h2>🔧 Atributos dos Robôs</h2>
+    <ul>
+        <li><strong>Nome</strong></li>
+        <li><strong>Ataque</strong> (inteiro positivo)</li>
+        <li><strong>Defesa</strong> (inteiro positivo)</li>
+    </ul>
+
+    <h2>⚠️ Regras de Validação</h2>
+    <ul>
+        <li>O total <strong>ataque + defesa</strong> de cada robô <strong>não pode ultrapassar 100</strong>.</li>
+        <li>Robôs com soma maior que 100 são <strong>desclassificados automaticamente</strong>.</li>
+    </ul>
+
+    <h2>⚙️ Regras de Batalha</h2>
+    <ul>
+        <li>Os robôs duelam em pares (Alfa 1 × Ômega 1, Alfa 2 × Ômega 2, etc).</li>
+        <li><strong>Impacto de combate</strong> = ataque do robô - defesa do adversário.</li>
+        <li>O robô com maior impacto vence o duelo.</li>
+        <li>Se ambos forem inválidos ou os impactos forem iguais, é <strong>empate</strong>.</li>
+    </ul>
+
+    <h2>🎯 Objetivo do Programa</h2>
+    <ol>
+        <li>Receber os dados de nome, ataque e defesa dos 8 robôs (sem usar laços).</li>
+        <li>Verificar se cada robô é válido.</li>
+        <li>Realizar os 4 duelos individualmente.</li>
+        <li>Mostrar o resultado de cada duelo, o placar final e a equipe vencedora.</li>
+    </ol>
+
+    <h2>📥 Exemplo de Entrada</h2>
+    <pre>Equipe Alfa:
+A1 → ataque = 40, defesa = 60 → válido
+A2 → ataque = 55, defesa = 50 → inválido
+A3 → ataque = 30, defesa = 40 → válido
+A4 → ataque = 70, defesa = 20 → válido
+
+Equipe Ômega:
+O1 → ataque = 50, defesa = 30 → válido
+O2 → ataque = 40, defesa = 40 → válido
+O3 → ataque = 35, defesa = 30 → válido
+O4 → ataque = 50, defesa = 60 → inválido
+    </pre>
+
+    <h2>📤 Exemplo de Saída</h2>
+    <pre class="resultado">DUELO 1: A1 (40/60) x O1 (50/30)
+Impacto A1 sobre O1: 40 - 30 = 10
+Impacto O1 sobre A1: 50 - 60 = -10
+Vencedor: A1 (Equipe Alfa)
+
+DUELO 2: A2 (INVÁLIDO) x O2 (40/40)
+Impacto A2 sobre O2: INVÁLIDO
+Impacto O2 sobre A2: 40 - 50 = -10
+Vencedor: O2 (Equipe Ômega)
+
+DUELO 3: A3 (30/40) x O3 (35/30)
+Impacto A3 sobre O3: 30 - 30 = 0
+Impacto O3 sobre A3: 35 - 40 = -5
+Vencedor: A3 (Equipe Alfa)
+
+DUELO 4: A4 (70/20) x O4 (INVÁLIDO)
+Impacto A4 sobre O4: 70 - 60 = 10
+Impacto O4 sobre A4: INVÁLIDO
+Vencedor: A4 (Equipe Alfa)
+
+--- PLACAR FINAL ---
+Vitórias Equipe Alfa: 3
+Vitórias Equipe Ômega: 1
+Empates: 0
+
+🏆 Equipe Alfa é a grande vencedora!
+    </pre>
+
+
+
+</body></html>
