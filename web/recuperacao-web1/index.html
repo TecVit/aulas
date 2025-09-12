@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore+ | Venda de Pacotes de Turismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Explore+ Pacotes de Turismo</h1>
+        <h2>Explore os melhores destinos com conforto e praticidade!</h2>
+        <a href="#formulario" class="btn">Comprar Agora</a>
+    </header>
+
+    <main>
+        <section class="galeria">
+            <h2>Destinos Imperdíveis</h2>
+            <ul class="destinos">
+                <li class="destino">
+                    <img src="img/paris.jpg" alt="Destino 1">
+                    <h3>Paris</h3>
+                    <p>A cidade luz, onde a cultura e a história se encontram.</p>
+                </li>
+                <li class="destino">
+                    <img src="img/new-york.jpg" alt="Destino 2">
+                    <h3>Nova York</h3>
+                    <p>Viva o agito da cidade que nunca dorme.</p>
+                </li>
+                <li class="destino">
+                    <img src="img/toquio.jpg" alt="Destino 3">
+                    <h3>Tóquio</h3>
+                    <p>A tradição e tecnologia lado a lado na capital do Japão.</p>
+                </li>
+                <li class="destino">
+                    <img src="img/rio-de-janeiro.jpg" alt="Destino 4">
+                    <h3>Rio de Janeiro</h3>
+                    <p>Mar, sol e o melhor do Brasil!</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulário de Compra</h2>
+            <form>
+                <label for="pacote">Tipo de Pacote:</label>
+                <select id="pacote" name="pacote">
+                    <option value="individual">Individual</option>
+                    <option value="familia">Família</option>
+                    <option value="luxo">Luxo</option>
+                </select>
+
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino">
+                    <option value="paris">Paris</option>
+                    <option value="ny">Nova York</option>
+                    <option value="tokyo">Tóquio</option>
+                    <option value="rio">Rio de Janeiro</option>
+                </select>
+
+                <label for="dias">Quantidade de Dias:</label>
+                <input type="number" id="dias" name="dias" min="3" max="15">
+
+                <fieldset>
+                    <legend>Serviços Adicionais</legend>
+                    <input type="checkbox" id="spa" name="spa" value="sim">
+                    <label for="spa">SPA:</label>
+                    <input type="checkbox" id="transporte" name="transporte" value="sim">
+                    <label for="transporte">Transporte entre Aeroporto e Hotel:</label>
+                </fieldset>
+
+                <label for="servico">Serviço Específico:</label>
+                <textarea id="servico" name="servico"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="resumo">
+            <h3 id="resumo">Resumo do seu Pacote Completo!</h3>
+            <table>
+                <caption>Resumo dos Opcionais</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Resumo dos Opcionais</th>
+                    </tr>
+                    <tr>
+                        <th>Opcionais</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="1">SPA</td>
+                        <td class="opcional-nao-incluso">Não Incluso</td>
+                    </tr>
+                    <tr>
+                        <td>Transporte</td>
+                        <td class="opcional-incluso">Incluso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Explore+. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
